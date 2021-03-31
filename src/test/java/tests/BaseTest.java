@@ -26,7 +26,7 @@ public class BaseTest {
     @BeforeClass
     public void setup(ITestContext context) {
         ChromeOptions chromeOptions = new ChromeOptions();
-        WebDriverManager.chromedriver().driverVersion("88.0.4324.96").setup();
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
